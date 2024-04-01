@@ -56,7 +56,7 @@ contract DelegationLocker {
 
 
     modifier existingLocker(uint _lockerID) {
-        require(numberOfLockers >= _lockerID, "Locker doesn't exist");
+        require(numberOfLockers >= _lockerID, "Locker does not exist");
         _;
     }
 
